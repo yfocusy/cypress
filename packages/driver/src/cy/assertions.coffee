@@ -69,7 +69,7 @@ prepareObjsForDiff = (err) ->
 objToString = Object.prototype.toString
 
 _sameType = (a, b) ->
-  return objToString.call(a) is objToString.call(b)
+  return typeof a is typeof b
 
 showDiff = (err) ->
   return (
